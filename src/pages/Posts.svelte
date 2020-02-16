@@ -11,7 +11,7 @@
   };
   let fetchdata = async () => {
     if ($user) {
-      let res = await fetch("http://localhost:1234/api/posts");
+      let res = await fetch("https://sample-forum-api.herokuapp.comlocalhost:1234/api/posts");
       let data = await res.json();
       if (res.ok) {
         return data;

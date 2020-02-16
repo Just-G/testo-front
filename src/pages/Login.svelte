@@ -9,7 +9,7 @@
       error = "plz check username and password";
       return;
     }
-    let res = await fetch("http://localhost:1234/api/user/login", {
+    let res = await fetch("https://sample-forum-api.herokuapp.comlocalhost:1234/api/user/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: {
